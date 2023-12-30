@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\FeedController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,10 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/profile', function () {
-    return view('users.profile');
-});
+Route::get('/profile',[ProfileController::class, "index"]);
 
-Route::get('/feed', function() {
-    return view('feed');
-});
+Route::get('/feed', [FeedController::class, 'index']);
