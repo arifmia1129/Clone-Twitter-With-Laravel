@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Feed</title>
 </head>
 <body>
-    <h1>This is home page. Welcome to our project.</h1>
+    <h1>This is feed page.</h1>
 </body>
 </html>
