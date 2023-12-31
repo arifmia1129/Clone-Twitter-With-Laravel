@@ -14,7 +14,7 @@ class DashboardController extends Controller
             "content"=>"This is a new idea."
         ]);
 
-        $idea->save();
+        // $idea->save();
 
         return view("dashboard",[
             "ideas"=>Idea::orderBy('created_at', 'DESC')->get()
