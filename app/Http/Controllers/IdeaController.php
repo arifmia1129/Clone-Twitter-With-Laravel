@@ -7,6 +7,11 @@ use App\Models\Idea;
 class IdeaController extends Controller
 {
     public function store() {
+
+        request()->validate([
+            'idea'=>'required|max:240|min:4'
+        ]);
+
      Idea::create([
         'content'=>request()->get('idea', '')
     ]);
